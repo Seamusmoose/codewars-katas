@@ -1,0 +1,12 @@
+
+const minMax = (arr) => {
+let min = Math.min(...arr)
+let max = Math.max(...arr)
+return [min, max]
+}
+
+// refactored:
+// return [Math.min(...arr), Math.min(...arr)]
+
+minMax([1,2,3,4,5])
+//[1,5]
