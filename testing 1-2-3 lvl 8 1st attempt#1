@@ -1,0 +1,18 @@
+
+const number = (array) => {
+  if (array === []) return []
+
+array.forEach((s, n) => {
+  console.log((n+1).toString(), ": " + s)
+})
+  
+}
+
+
+// if an array is empty return empty array
+
+// return must have a colon and space in between n: string
+// each element returned is a string
+
+
+number(["a", "b", "c"])
