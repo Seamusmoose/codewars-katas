@@ -1,0 +1,18 @@
+
+const number = (array) => {
+  if (array === []) return []
+
+let newArray = array.map((s, i) => {
+  return (i+1).toString() + ": " + s
+})
+return newArray
+}
+
+// if an array is empty return empty array
+// return must have a colon and space in between n: string
+// each element returned is a string
+
+// map over and add index to method
+
+
+number(["a", "b", "c"])
