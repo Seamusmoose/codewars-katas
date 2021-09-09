@@ -1,0 +1,27 @@
+
+function divisors(integer) {
+  let array = [];
+  for (let i = 2; i < integer; i++) {
+  
+     if (integer % i === 0) {
+      array.push(i)
+      } else {
+      if (integer !% i === 0)
+      }
+    
+  
+   
+  }
+  return array
+};
+
+// find all integers from number till 1
+// if an integer is divisable by the initial integer, return it.
+//
+
+divisors(15)
+//[3, 5]);
+divisors(12) 
+ // [2, 3, 4, 6]);
+divisors(13) 
+//"13 is prime");
