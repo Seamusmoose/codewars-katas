@@ -1,16 +1,25 @@
-const mergeArrays = (a,b) => {
- let array = [];
-  
-let resultArr = a.map((n,index) => {
-console.log(n + b[index])
-  
-})
+function arrayMadness(a, b) {
+  let res1 = 0;
+  let res2 = 0;
 
+  a.map(el => {
+  res1 += el ** 2
+  })
+  
+  b.map(el => {
+  res2 += el ** 3
+  })
+
+
+return res1 > res2 ? true : false
+ 
 }
 
+// calc each array and compare
 
-// find the index of the first array
-// 
 
-mergeArrays([1, 2, 3, 4, 5, 6, 7, 8], ['a', 'b', 'c', 'd', 'e'])
-  //[1, "a", 2, "b", 3, "c", 4, "d", 5, "e", 6, 7, 8]);
+arrayMadness([4,5,6],[1,2,3])
+//true);
+
+arrayMadness([5,6,7],[4,5,6])
+  //, false);
