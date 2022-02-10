@@ -1,0 +1,25 @@
+
+  const doTest = (str) => {
+let char = str.split("  ").map(i => i.charAt(i.length-1) === "!" ? i.slice(0, -1) : i)
+return char.join(" ")
+  }
+
+
+
+// remove exclamation mark, if last index is an !
+
+// - check last character of string
+// - compare it to ! 
+// remove if matches
+// return rest of string
+
+
+
+doTest("Hi!");
+		doTest("Hi!!!");
+		doTest("!Hi");
+		doTest("!Hi!");
+		doTest("Hi! Hi!");
+		doTest("Hi");
+
+
