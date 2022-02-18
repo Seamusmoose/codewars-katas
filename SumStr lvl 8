@@ -1,0 +1,19 @@
+const sumStr = (a, b) => {
+  if (a, b === null) return null
+  // if (b === null) return null
+  
+const result = Number(a) + Number(b)
+return result.toString()
+}
+
+// return the sum of the strings, as a string
+
+// if either var is null return 0
+// convert strings to numbers
+// sum up the variables
+// and re convert to a string
+
+sumStr("","5")
+//"9"
+sumStr("34","5")
+  //, "39")

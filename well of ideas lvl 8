@@ -1,0 +1,30 @@
+const well = (x) => {
+let occ = 0;
+ x.map(i => i === "good" ? occ++ : null)
+  
+if (occ > 2) {
+  return 'I smell a series!'
+} else if (occ === 0) {
+  return  'Fail!'
+} else {
+return 'Publish!'
+}
+}
+  
+// count the instances of a string
+// if "good" once or twice, return Publish
+// if "good" more than twice, return  I smell a series
+// if no "good" elements then return fail
+
+well(['bad', 'bad', 'bad'])
+//'Fail!');
+well(['good', 'bad', 'bad', 'bad', 'bad'])
+  //'Publish!');
+well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good'])
+  //, 'I smell a series!');
+  
+// best refactor
+// const  well = x => {
+//   let count = x.filter(el => el == 'good').length
+//   return  count > 2 ? 'I smell a series!' : count > 0 ? 'Publish!' : 'Fail!'; 
+// }
