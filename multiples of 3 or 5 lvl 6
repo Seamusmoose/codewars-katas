@@ -1,0 +1,25 @@
+function solution(number){
+  if (number <= 0) return 0
+  console.log(number)
+  let array = [];
+  let result = [];
+for (let i = 0; i < number; i++) {
+array.push(i)
+}
+let divisable = array.map(i => {
+if (i % 3 === 0 || i % 5 === 0) {
+  result.push(i)
+}
+})
+return result.reduce((a, b) => {
+  return a + b
+})
+
+}
+
+// map numbers below para to 0 into an array
+// check numbers are divisable by 3 or 5
+// add those numbers together
+
+
+//Code only runs on tests in codewar browser, but this was correct
