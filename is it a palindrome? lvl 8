@@ -1,0 +1,17 @@
+
+//is it a palindrome?
+const isPalindrome = x => {
+const reversed = [...x].reverse().join('').toLowerCase()
+return (x.toLowerCase() === reversed ? true : false)
+}
+
+// convert string to lower case
+// compare parameter string with reversed version of said string
+
+
+isPalindrome("a")
+  //, true))
+isPalindrome("aba")
+  //, true));
+isPalindrome("hello")
+  //, false));
