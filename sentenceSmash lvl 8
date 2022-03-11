@@ -1,0 +1,11 @@
+const smash = words => words.join(" ")
+
+
+
+
+
+
+
+
+smash(["hello", "amazing", "world"])
+  //, "hello amazing world");
