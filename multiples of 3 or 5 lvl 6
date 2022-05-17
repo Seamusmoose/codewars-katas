@@ -1,25 +1,35 @@
-function solution(number){
-  if (number <= 0) return 0
-  console.log(number)
-  let array = [];
-  let result = [];
-for (let i = 0; i < number; i++) {
-array.push(i)
-}
-let divisable = array.map(i => {
-if (i % 3 === 0 || i % 5 === 0) {
-  result.push(i)
-}
-})
-return result.reduce((a, b) => {
-  return a + b
-})
+const diamond = (n) => {
+if (n <= 0 || n % 2 === 0) {
+  return null
+ }   else if (!(n % 2 === 0)) {
+   return n
+ } 
 
+
+  // n <= 0 ? null : n
+  // return !(n % 2 === 0) 
+   
 }
 
-// map numbers below para to 0 into an array
-// check numbers are divisable by 3 or 5
-// add those numbers together
 
+diamond(1)
+//"*\n")
+diamond(3)
+//" *\n***\n *\n")
+diamond(5)
+ //"  *\n ***\n*****\n ***\n  *\n")
+diamond(2)
+ //null)
+ diamond(-3)
+  //null
+ diamond(0)
+  //null
 
-//Code only runs on tests in codewar browser, but this was correct
+// return a diamond shape made of asterics(*) based on numbers given 
+// each new line needs to be seperated with /n
+
+// if number is even or negative return null
+// find any odd numbers between the number and 0
+// repeat numbers under prameter number once
+// return *'s per number 
+// return each number with /n to seperate the numbers

@@ -1,0 +1,30 @@
+const diamond = (n) => {
+  let result;
+  let first;
+  let second;
+  let increment = [];
+  let decrement = [];
+
+  if (n <= 0 || n % 2 === 0) {
+    return null;
+  } else {
+    for (let i = 0; i < n; i++) {
+      if (!(i % 2 === 0)) increment.push(i);
+    }
+
+    for (let i = 0; n >= i; i++) {
+      if (!(i % 2 === 0)) decrement.push(i);
+    }
+
+    decrement.reverse();
+	result = increment.concat(decrement);
+	return result.map((i) => "*".repeat(i) + "\n").join(" ") 
+  // first = increment.map((i) => "*".repeat(i) + "\n").join(" ") 
+  // second = decrement.map((i) => "*".repeat(i) + "\n").join(" ") 
+  }  
+  // return  ` ${first} ${second}`
+};
+
+
+diamond(5)
+    // return 

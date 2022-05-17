@@ -1,0 +1,27 @@
+const solution = (str, ending) => {
+   const string = str.slice(str.length - ending.length)
+ return string === ending ? true : false
+}
+
+
+
+
+
+
+// if second string us the end of the first string return true:
+// - check each element of the string, 
+// - count the length of the second string
+// - find last digits of first string and compare to second, then return boolean
+
+solution('abcde', 'cde')
+  //, true)
+ solution('abcde', 'abc')
+  //, false)
+
+
+// refactored ways:
+// const solution = (str, ending) => str.endsWith(ending);
+
+// function solution(str, ending){
+//   return str.substr(-ending.length) == ending;
+// }
